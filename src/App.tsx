@@ -6,6 +6,7 @@ import { Login } from './pages/Login';
 import { Explore } from './pages/Explore';
 import { Navbar } from './pages/navbar/Navbar';
 import { Header } from './pages/header/Header';
+import { CreatePost } from './pages/create-post/Create-Post';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/explore" element={<Explore/>}/>
+          <Route path="/createpost" element={<CreatePost/>}/>
         </Routes>
       </Router>
     </div>

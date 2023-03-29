@@ -1,12 +1,18 @@
 import React from "react";
-import "./PostCard.css"; // import the CSS file for styling
+import "./PostCard.css"; 
+import { Post as IPost} from "../pages/Home";
 
-function PostCard({ title="William W. Purkey", description ="You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing like there's nobody listening,And live like it's heaven on earth,You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing like there's nobody listening,And live like it's heaven on earth,You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing like there's nobody listening,And live like it's heaven on earth,You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing like there's nobody listening,And live like it's heaven on earth,You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing like there's nobody listening,And live like it's heaven on earth"}) {
+interface Props{
+  post: IPost
+}
+
+function PostCard(props : Props) {
+  const {post} = props;
   return (
     <div className="container">
     <div className="post-card">
-      <h2 className="post-title">{title}</h2>
-      <p className="post-description">{description}</p>
+      <h2 className="post-title">{post.title}</h2>
+      <p className="post-description">{post.description}</p>
       <div className="post-buttons">
         <button className="like-button">❤️</button>
         <button className="comment-button">💬</button>
