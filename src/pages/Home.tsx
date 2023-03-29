@@ -1,5 +1,11 @@
+import PostCard from "../components/PostCard"
+
 export const Home = () =>{
 	return (
-		<div>This is home page</div>
+		<div>
+			<PostCard/>
+			<PostCard/>
+			<PostCard/>
+		</div>
 	)
 }
